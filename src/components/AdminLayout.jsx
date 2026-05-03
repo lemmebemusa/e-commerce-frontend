@@ -1,6 +1,6 @@
 import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { LayoutDashboard, Package, ShoppingCart, Grid, Users, LogOut, Menu, X, Pill, Lock, Eye, EyeOff, Image, Building2 } from 'lucide-react';
+import { LayoutDashboard, Package, ShoppingCart, Grid, Users, LogOut, Menu, X, Lock, Eye, EyeOff, Image, Building2 } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { api } from '../lib/api';
 
@@ -73,9 +73,6 @@ const navItems = [
       <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
         <div className="w-full max-w-sm">
           <div className="text-center mb-8">
-            <div className="w-16 h-16 bg-black rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <Pill className="w-8 h-8 text-white" />
-            </div>
             <h1 className="text-2xl font-medium">Admin Login</h1>
             <p className="text-gray-500 text-sm mt-2">Enter your admin password to continue</p>
           </div>
@@ -135,9 +132,6 @@ const navItems = [
                 <Menu className="w-5 h-5" />
               </button>
               <Link to="/admin" className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
-                  <Pill className="w-4 h-4 text-white" />
-                </div>
                 <span className="text-lg font-medium hidden sm:block">Admin Panel</span>
               </Link>
             </div>
